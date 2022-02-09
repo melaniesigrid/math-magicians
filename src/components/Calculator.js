@@ -2,11 +2,17 @@ import React from 'react';
 import './calculator.css';
 // eslint-disable-next-line react/prefer-stateless-function
 class Calculator extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      total: 0
+    }
+  }
   render () {
     return (
       <div className='calculator-container'>
-        <div className='display' id='display'><p>{ 0 }</p></div>
-        <div className='buttonGrid'>
+        <div className='display' id='display'><p>{ this.state.total }</p></div>
+        <div className='button-grid'>
           <button className='btn clear' id='clear'>AC</button>
           <button className='btn plusMinus' id='plus-minus'>+/-</button>
           <button className='btn percent' id='percent'>%</button>
@@ -23,6 +29,8 @@ class Calculator extends React.Component {
           <button className='btn two' id='two'>2</button>
           <button className='btn three' id='three'>3</button>
           <button className='btn plus orange' id='add'>+</button>
+        </div>
+        <div className='bottom-container'>
           <button className='btn zero' id='zero'>0</button>
           <button className='btn decimal' id='decimal'>.</button>
           <button className='btn equals orange' id='equals'>=</button>

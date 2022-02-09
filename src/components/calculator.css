@@ -12,8 +12,7 @@
   background-color: #dddcff;
   color: black;
   font-size: 1.8rem;
-  justify-content: right;
-  align-items: center;
+  text-align: right;
   padding-right: 1rem;
   border: 1px solid gray;
 }

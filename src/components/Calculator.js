@@ -2,14 +2,10 @@ import React from 'react';
 import './calculator.css';
 // eslint-disable-next-line react/prefer-stateless-function
 class Calculator extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { total: 0 };
-  }
-  render () {
+  render() {
     return (
       <div className="calculator-container">
-        <div className="display" id="display"><p>{ this.state.total }</p></div>
+        <input type="text" className="display" id="display" value={0} />
         <div className="button-grid">
           <button type="button" className="btn clear" id="clear">AC</button>
           <button type="button" className="btn plusMinus" id="plus-minus">+/-</button>

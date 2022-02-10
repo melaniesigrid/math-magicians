@@ -15,6 +15,6 @@ CalcButton.propTypes = {
   buttonName: PropTypes.string.isRequired,
   buttonClasses: PropTypes.string.isRequired,
   myFunc: PropTypes.func.isRequired,
-}
+};
 
 export default CalcButton;

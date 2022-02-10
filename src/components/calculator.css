@@ -11,8 +11,9 @@
   display: flex;
   background-color: #dddcff;
   color: black;
-  font-size: 1.8rem;
-  text-align: right;
+  font-size: 2.5rem;
+  align-items: center;
+  justify-content: right;
   padding-right: 1rem;
   border: 1px solid gray;
 }

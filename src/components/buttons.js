@@ -4,12 +4,12 @@ import React from 'react';
 class CalcButton extends React.Component {
   constructor(props) {
     super(props);
-    const { buttonName, buttonClasses } = this.props;
   }
 
   render() {
+    const {buttonName, buttonClasses} = this.props;
     return (
-      <button type="button" className={this.props.buttonClasses}>{ this.props.buttonName }</button>
+      <button type="button" className={buttonClasses}>{buttonName}</button>
     );
   }
 }

@@ -7,9 +7,9 @@ class CalcButton extends React.Component {
   }
 
   render() {
-    const {buttonName, buttonClasses} = this.props;
+    const { buttonName, buttonClasses, myFunc} = this.props;
     return (
-      <button type="button" className={buttonClasses}>{buttonName}</button>
+      <button type="button" onClick={myFunc} className={buttonClasses}>{buttonName}</button>
     );
   }
 }

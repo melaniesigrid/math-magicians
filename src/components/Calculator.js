@@ -1,33 +1,55 @@
 import React from 'react';
 import './calculator.css';
+import CalcButton from './buttons'
+import calculate from '../logic/calculate';
+
 // eslint-disable-next-line react/prefer-stateless-function
 class Calculator extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      total: 0,
+      next: null,
+      operation: null,
+    };
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick = (event) => {
+    this.setState((state) => calculate(state, event.target.textContent));
+  }
+
   render() {
+    const { total, next, operation } = this.state;
     return (
       <div className="calculator-container">
-        <input type="text" className="display" id="display" value={0} />
+        <div className="display" id="display">
+          {total}
+          {operation}
+          {next}
+        </div>
         <div className="button-grid">
-          <button type="button" className="btn clear" id="clear">AC</button>
-          <button type="button" className="btn plusMinus" id="plus-minus">+/-</button>
-          <button type="button" className="btn percent" id="percent">%</button>
-          <button type="button" className="btn divide orange" id="divide">÷</button>
-          <button type="button" className="btn seven" id="seven">7</button>
-          <button type="button" className="btn eight" id="eight">8</button>
-          <button type="button" className="btn nine" id="nine">9</button>
-          <button type="button" className="btn multiply orange" id="multiply">x</button>
-          <button type="button" className="btn four" id="four">4</button>
-          <button type="button" className="btn five" id="five">5</button>
-          <button type="button" className="btn six" id="six">6</button>
-          <button type="button" className="btn subtract orange" id="subtract">-</button>
-          <button type="button" className="btn one" id="one">1</button>
-          <button type="button" className="btn two" id="two">2</button>
-          <button type="button" className="btn three" id="three">3</button>
-          <button type="button" className="btn plus orange" id="add">+</button>
+          <CalcButton onClick={ this.handleClick } buttonName="AC" buttonClasses="btn clear" id="clear" />
+          <CalcButton onClick={ this.handleClick } buttonName="+/-" buttonClasses="btn plusMinus" id="plus-minus" />
+          <CalcButton onClick={ this.handleClick } buttonName="%" buttonClasses="btn percent" id="percent" />
+          <CalcButton onClick={ this.handleClick } buttonName="÷" buttonClasses="btn divide orange" id="divide" />
+          <CalcButton onClick={ this.handleClick } buttonName="7" buttonClasses="btn seven" id="seven">7</CalcButton>
+          <CalcButton onClick={ this.handleClick } buttonName="8" buttonClasses="btn eight" id="eight" />
+          <CalcButton onClick={ this.handleClick } buttonName="9" buttonClasses="btn nine" id="nine" />
+          <CalcButton onClick={ this.handleClick } buttonName="x" buttonClasses="btn multiply orange" id="multiply" />
+          <CalcButton onClick={ this.handleClick } buttonName="4" buttonClasses="btn four" id="four" />
+          <CalcButton onClick={ this.handleClick } buttonName="5" buttonClasses="btn five" id="five" />
+          <CalcButton onClick={ this.handleClick } buttonName="6" buttonClasses="btn six" id="six" />
+          <CalcButton onClick={ this.handleClick  } buttonName="-" buttonClasses="btn subtract orange" id="subtract" />
+          <CalcButton onClick={ this.handleClick } buttonName="1" buttonClasses="btn one" id="one" />
+          <CalcButton onClick={ this.handleClick } buttonName="2" buttonClasses="btn two" id="two" />
+          <CalcButton onClick={ this.handleClick } buttonName="3" buttonClasses="btn three" id="three" />
+          <CalcButton onClick={ this.handleClick } buttonName="+" buttonClasses="btn plus orange" id="add" />
         </div>
         <div className="bottom-container">
-          <button type="button" className="btn zero" id="zero">0</button>
-          <button type="button" className="btn decimal" id="decimal">.</button>
-          <button type="button" className="btn equals orange" id="equals">=</button>
+          <CalcButton onClick={ this.handleClick } buttonName="0" buttonClasses="btn zero" id="zero" />
+          <CalcButton onClick={ this.handleClick } buttonName="." buttonClasses="btn decimal" id="decimal" />
+          <CalcButton onClick={ this.handleClick } buttonName="=" buttonClasses="btn equals orange" id="equals" />
         </div>
       </div>
     );

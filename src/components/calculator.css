@@ -11,6 +11,7 @@
   display: grid;
   grid-template-rows: 1fr 4fr 1fr;
   border-radius: 2rem;
+  box-shadow: 13px 13px 20px rgb(0, 0, 0);
 }
 
 .display {

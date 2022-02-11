@@ -8,7 +8,7 @@ const Calculator = () => {
   const [totals, setTotals] = useState({});
   useEffect(() => {
     setTotals({
-      total: 0,
+      total: null,
       next: null,
       operation: null,
     });
@@ -21,14 +21,19 @@ const Calculator = () => {
   return (
     <div className="calculator-container">
       <div className="display" id="display">
-        {totals.total}
-        {totals.operation}
-        {totals.next}
+        <span className="hint">
+          {totals.total}
+          {totals.operation}
+          {totals.next}
+        </span>
+        <span className="total">
+          {totals.next ?? totals.total ?? 0}
+        </span>
       </div>
       <div className="button-grid">
         <CalcButton myFunc={handleClick} buttonName="AC" buttonClasses="btn clear" id="clear" />
         <CalcButton myFunc={handleClick} buttonName="+/-" buttonClasses="btn plusMinus" id="plus-minus" />
-        <CalcButton myFunc={handleClick} buttonName="%" buttonClasses="btn percent" id="percent" />
+        <CalcButton myFunc={handleClick} buttonName="%" buttonClasses="btn modulo" id="modulo" />
         <CalcButton myFunc={handleClick} buttonName="÷" buttonClasses="btn divide orange" id="divide" />
         <CalcButton myFunc={handleClick} buttonName="7" buttonClasses="btn seven" id="seven" />
         <CalcButton myFunc={handleClick} buttonName="8" buttonClasses="btn eight" id="eight" />

@@ -10,9 +10,9 @@
 
 - React
 
-## Live Demo (coming soon)
+## Live Demo 🚀
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://melaniesigrid.github.io/math-magicians/)
 
 
 ## Getting Started
@@ -24,6 +24,8 @@ Install Node and npm on your computer.
 ### Setup
 Clone this repository with git clone https://github.com/melaniesigrid/math-magicians.git in your terminal.
 Navigate to the project directory, and run npm start.
+
+Or, visit my GitHub Pages deployment on [this link](https://melaniesigrid.github.io/math-magicians/).
 
 ## Author
 

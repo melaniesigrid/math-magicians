@@ -3,7 +3,7 @@
   background: -moz-linear-gradient(0deg, rgba(25, 52, 136, 1) 0%, rgba(146, 77, 168, 1) 100%);
   background: -webkit-linear-gradient(0deg, rgba(25, 52, 136, 1) 0%, rgba(146, 77, 168, 1) 100%);
   background: linear-gradient(0deg, rgba(25, 52, 136, 1) 0%, rgba(146, 77, 168, 1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#193488", endColorstr="#924da8", GradientType=1);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr="#193488", endColorstr="#924da8", GradientType=1);
   color: white;
   width: 30rem;
   height: 30rem;
@@ -71,8 +71,7 @@ button {
   border-bottom-right-radius: 2rem;
 }
 
-@media only screen
-and (max-device-width : 480px) {
+@media only screen and (max-device-width : 480px) {
   .calculator-container {
     max-width: 80vw;
     max-height: 120vw;

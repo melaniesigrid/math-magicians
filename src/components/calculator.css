@@ -50,6 +50,7 @@ button {
   background: transparent;
   color: white;
   font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 600;
 }
 
 .btn {

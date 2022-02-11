@@ -57,6 +57,10 @@ button {
 }
 
 .btn:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.btn:hover {
   cursor: pointer;
 }
 

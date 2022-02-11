@@ -16,7 +16,7 @@ const Calculator = () => {
 
   const handleClick = (event) => {
     setTotals(calculate(totals, event.target.textContent));
-  }
+  };
 
   return (
     <div className="calculator-container">
@@ -50,6 +50,6 @@ const Calculator = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Calculator;

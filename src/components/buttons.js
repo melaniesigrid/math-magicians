@@ -5,10 +5,10 @@ import PropTypes from 'prop-types';
 class CalcButton extends React.Component {
   render() {
     const {
-      buttonName, buttonClasses, myFunc
+      buttonName, buttonClasses, myFunc,
     } = this.props;
     return (
-      <button type="button" key={key} onClick={myFunc} className={buttonClasses}>{buttonName}</button>
+      <button type="button" onClick={myFunc} className={buttonClasses}>{buttonName}</button>
     );
   }
 }

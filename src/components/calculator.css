@@ -40,6 +40,10 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.button-grid:nth-child(4n) {
+  background-color: #454ed4;
+}
+
 .bottom-container {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;

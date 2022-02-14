@@ -4,7 +4,9 @@ import PropTypes from 'prop-types';
 // eslint-disable-next-line react/prefer-stateless-function
 class CalcButton extends React.Component {
   render() {
-    const { buttonName, buttonClasses, myFunc, key } = this.props;
+    const {
+      buttonName, buttonClasses, myFunc
+    } = this.props;
     return (
       <button type="button" key={key} onClick={myFunc} className={buttonClasses}>{buttonName}</button>
     );

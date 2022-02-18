@@ -6,7 +6,7 @@ import {
 import Header from './components/Header';
 import Calculator from './components/Calculator';
 import About from './pages/About';
-import Quote from './pages/Quote'
+import Quote from './pages/Quote';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class App extends React.Component {

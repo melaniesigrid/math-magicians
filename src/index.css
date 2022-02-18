@@ -3,6 +3,18 @@
 body {
   font-family: 'IBM Plex Sans', sans-serif;
   background-color: #1a1a1a;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(146, 77, 168, 1);
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+.App {
   min-height: 100vh;
   display: flex;
   justify-content: center;

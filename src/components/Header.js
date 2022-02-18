@@ -2,34 +2,35 @@ import React from 'react';
 
 const Header = () => {
   const headerStyle = {
-    width: "100vw",
-    position: "fixed",
+    width: '100vw',
+    position: 'fixed',
     top: 0,
-    padding: "1rem 0",
-    color: "rgba(146, 77, 168, 1)",
-  }
+    padding: '1rem 0',
+    color: 'rgba(146, 77, 168, 1)',
+  };
 
   const navStyle = {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-around",
-  }
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-around',
+  };
+
   const titleStyle = {
     left: 0,
-    textTransform: "lowercase",
-    fontSize:"3rem",
-  }
+    textTransform: 'lowercase',
+    fontSize: '3rem',
+  };
 
   const listStyle = {
-    listStyleType: "none",
-    display: "flex",
-    fontSize: "1.3rem",
-  }
+    listStyleType: 'none',
+    display: 'flex',
+    fontSize: '1.3rem',
+  };
 
   const itemStyle = {
-    padding: "1rem",
-    fontWeight: "bold",
-  }
+    padding: '1rem',
+    fontWeight: 'bold',
+  };
 
   return (
     <header style={headerStyle}>
@@ -44,7 +45,7 @@ const Header = () => {
         </ul>
       </nav>
     </header>
-  )
-}
+  );
+};
 
 export default Header;

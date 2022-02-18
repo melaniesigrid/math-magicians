@@ -1,6 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import { render } from "react-dom";
+import {
+  Routes,
+  Route
+} from 'react-router-dom';
 import Header from './components/Header';
 import Calculator from './components/Calculator';
 import About from './pages/About';
@@ -9,11 +11,11 @@ import About from './pages/About';
 class App extends React.Component {
   render() {
     return (
-      <div class="App">
+      <div className="App">
         <Header />
         <Routes>
           <Route path="/math-magicians" element={<Calculator />} />
-          <Route path="/about" element={<About />}/>
+          <Route path="/about" element={<About />} />
         </Routes>
       </div>
     );

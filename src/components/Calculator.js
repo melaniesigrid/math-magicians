@@ -20,7 +20,7 @@ const Calculator = () => {
 
   return (
     <div clasName="App">
-      <h3 className="letsStyle">Let's do some math!</h3>
+      <h3 className="letsStyle">Let&apos;s do some math!</h3>
       <div className="calculator-container">
         <div className="display" id="display">
           <span className="hint">

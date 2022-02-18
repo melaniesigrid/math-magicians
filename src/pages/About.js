@@ -26,9 +26,9 @@ const About = () => {
         </ul>
         It was my first project using React. If you enjoyed it, check out my other projects on
         <span> </span>
-          <a href="https://github.com/melaniesigrid">
-            GitHub
-          </a>
+        <a href="https://github.com/melaniesigrid">
+          GitHub
+        </a>
         .
       </p>
     </div>

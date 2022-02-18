@@ -1,6 +1,6 @@
 import React from 'react';
 
-const About = () => {
+const Home = () => {
   const titleStyle = {
     color: 'white',
     fontSize: '2.3rem',
@@ -33,4 +33,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Home;

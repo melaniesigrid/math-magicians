@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   const headerStyle = {
@@ -39,9 +40,9 @@ const Header = () => {
           <a href="/math-magicians/" rel="noopener noreferrer">Math-Magicians</a>
         </h1>
         <ul style={listStyle}>
-          <li style={itemStyle}><a href="/About/" rel="noopener noreferrer">About</a></li>
-          <li style={itemStyle}><a href="/math-magicians/" rel="noopener noreferrer">Calculator</a></li>
-          <li style={itemStyle}><a href="/Quote/" rel="noopener noreferrer">Quote</a></li>
+          <li style={itemStyle}><NavLink to="/Home/" rel="noopener noreferrer">Home</NavLink></li>
+          <li style={itemStyle}><NavLink to="/math-magicians/" rel="noopener noreferrer">Calculator</NavLink></li>
+          <li style={itemStyle}><NavLink to="/Quote/" rel="noopener noreferrer">Quote</NavLink></li>
         </ul>
       </nav>
     </header>

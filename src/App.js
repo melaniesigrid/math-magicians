@@ -5,7 +5,7 @@ import {
 } from 'react-router-dom';
 import Header from './components/Header';
 import Calculator from './components/Calculator';
-import About from './pages/About';
+import Home from './pages/Home';
 import Quote from './pages/Quote';
 
 // eslint-disable-next-line react/prefer-stateless-function
@@ -16,7 +16,7 @@ class App extends React.Component {
         <Header />
         <Routes>
           <Route path="/math-magicians/" element={<Calculator />} />
-          <Route path="/About" element={<About />} />
+          <Route path="/Home" element={<Home />} />
           <Route path="/Quote/" element={<Quote />} />
         </Routes>
       </div>

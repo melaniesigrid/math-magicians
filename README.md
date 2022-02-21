@@ -13,6 +13,7 @@
 ## Live Demo 🚀
 
 [Live Demo Link](https://melaniesigrid.github.io/math-magicians/)
+[Heroku Deployment](https://whispering-hollows-25334.herokuapp.com/math-magicians/)
 
 
 ## Getting Started

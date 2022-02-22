@@ -41,7 +41,7 @@ const Header = () => {
         </h1>
         <ul style={listStyle}>
           <li style={itemStyle}><NavLink to="/Home/" rel="noopener noreferrer">Home</NavLink></li>
-          <li style={itemStyle}><NavLink to="/math-magicians/" rel="noopener noreferrer">Calculator</NavLink></li>
+          <li style={itemStyle}><NavLink to="/" rel="noopener noreferrer">Calculator</NavLink></li>
           <li style={itemStyle}><NavLink to="/Quote/" rel="noopener noreferrer">Quote</NavLink></li>
         </ul>
       </nav>

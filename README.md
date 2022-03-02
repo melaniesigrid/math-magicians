@@ -34,7 +34,7 @@ Or, visit my GitHub Pages deployment on [this link](https://melaniesigrid.github
 
 - GitHub: [@melaniesigrid](https://github.com/melaniesigrid)
 - Twitter: [@SiriMoon11](https://twitter.com/SiriMoon11)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/melanie-arellano-92aaa9194/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/melaniesigrid/)
 
 ## 🤝 Contributing
 

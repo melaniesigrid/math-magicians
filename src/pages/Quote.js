@@ -21,7 +21,7 @@ const Quote = () => {
         setQuote(myQuote);
         setAuthor(myAuthor);
       });
-  }
+  };
 
   useEffect(() => getQuote(), []);
 

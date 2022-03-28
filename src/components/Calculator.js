@@ -19,7 +19,7 @@ const Calculator = () => {
   };
 
   return (
-    <div clasName="App">
+    <div>
       <h3 className="letsStyle">Let&apos;s do some math!</h3>
       <div className="calculator-container">
         <div className="display" id="display">

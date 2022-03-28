@@ -37,7 +37,7 @@ const Header = () => {
     <header style={headerStyle}>
       <nav style={navStyle}>
         <h1 style={titleStyle}>
-          <a href="/math-magicians/" rel="noopener noreferrer">Math-Magicians</a>
+          <NavLink to="/" rel="noopener noreferrer">Math-Magicians</NavLink>
         </h1>
         <ul style={listStyle}>
           <li style={itemStyle}><NavLink to="/Home/" rel="noopener noreferrer">Home</NavLink></li>

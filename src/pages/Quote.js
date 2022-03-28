@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import Axios from 'axios';
 
 const Quote = () => {
+  const [quote, setQuote] = useState();
+  const [author, setAuthor] = useState();
+  const apiUrl = "https://random-math-quote-api.herokuapp.com/";
   const quoteStyle = {
     color: 'white',
     fontSize: '1.8rem',
@@ -8,11 +12,24 @@ const Quote = () => {
     textAlign: 'center',
   };
 
+  const getQuote = () => {
+    Axios.get(apiUrl)
+      .then((response) => {
+        const myObject = response.data;
+        const myQuote = myObject.quote;
+        console.log(myQuote);
+        const myAuthor = myObject.author;
+        console.log(myAuthor);
+        setQuote(myQuote);
+        setAuthor(myAuthor);
+    })
+  }
+
+  useEffect(() => getQuote(), []);
   return (
     <p style={quoteStyle}>
-      &quot;Mathematics is not about numbers,
-      equations, computations, or algorithms: it is about understanding.&quot;
-      <span>- William Paul Thurston</span>
+      &quot;{quote}&quot;
+      <span>{`- ${author}`}</span>
     </p>
   );
 };

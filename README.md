@@ -2,7 +2,7 @@
 
 # Math Magicians
 
-> "Math magicians" is a website for all fans of mathematics. It is a dark-themed Single Page App (SPA) that allows users to make simple calculations, and read a random math-related quote.
+> "Math magicians" is a website for all fans of mathematics. It is a dark-themed Single Page App (SPA) that allows users to make simple calculations, and read a random math-related quote (powered by the [Random Math Quote API](https://github.com/arcanemutterings/random-quote-generator-api)).
 
 ![screenshot](./new_screenshot.png)
 
@@ -48,7 +48,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to all of my code reviewers and partners at Microverse!
+- Hat tip to @arcanemutterings for his random math quote API!
 
 ## 📝 License
 

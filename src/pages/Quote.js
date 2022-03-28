@@ -4,7 +4,7 @@ import Axios from 'axios';
 const Quote = () => {
   const [quote, setQuote] = useState();
   const [author, setAuthor] = useState();
-  const apiUrl = "https://random-math-quote-api.herokuapp.com/";
+  const apiUrl = 'https://random-math-quote-api.herokuapp.com/';
   const quoteStyle = {
     color: 'white',
     fontSize: '1.8rem',
@@ -17,19 +17,22 @@ const Quote = () => {
       .then((response) => {
         const myObject = response.data;
         const myQuote = myObject.quote;
-        console.log(myQuote);
         const myAuthor = myObject.author;
-        console.log(myAuthor);
         setQuote(myQuote);
         setAuthor(myAuthor);
-    })
+      });
   }
 
   useEffect(() => getQuote(), []);
+
   return (
     <p style={quoteStyle}>
-      &quot;{quote}&quot;
-      <span>{`- ${author}`}</span>
+      &quot;
+      {quote}
+      &quot;
+      <span>
+        {`- ${author}`}
+      </span>
     </p>
   );
 };

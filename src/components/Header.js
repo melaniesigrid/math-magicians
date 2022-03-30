@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import {useMediaQuery} from '../hooks/hooks';
-import './header.css';
+import useMediaQuery from '../hooks/hooks';
 
 const Header = () => {
   const [modalOpen, setModalOpen] = useState(false);

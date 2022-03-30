@@ -98,8 +98,8 @@ const Header = () => {
                       ≡
                     </button>
                   )}
-                </div>
-              </nav>
+              </div>
+            </nav>
           )}
       </div>
     </header>

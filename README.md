@@ -2,9 +2,9 @@
 
 # Math Magicians
 
-> "Math magicians" is a website for all fans of mathematics. It is a dark-themed Single Page App (SPA) that allows users to make simple calculations, and read a random math-related quote.
+> "Math magicians" is a website for all fans of mathematics. It is a dark-themed Single Page App (SPA) that allows users to make simple calculations, and read a random math-related quote (powered by the [Random Math Quote API](https://github.com/arcanemutterings/random-quote-generator-api)).
 
-![screenshot](./app_screenshot.png)
+![screenshot](./new_screenshot.png)
 
 ## Built With
 
@@ -13,6 +13,7 @@
 ## Live Demo 🚀
 
 [Live Demo Link](https://melaniesigrid.github.io/math-magicians/)
+[Heroku deployment](https://whispering-hollows-25334.herokuapp.com/math-magicians/)
 
 
 ## Getting Started
@@ -33,7 +34,7 @@ Or, visit my GitHub Pages deployment on [this link](https://melaniesigrid.github
 
 - GitHub: [@melaniesigrid](https://github.com/melaniesigrid)
 - Twitter: [@SiriMoon11](https://twitter.com/SiriMoon11)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/melanie-arellano-92aaa9194/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/melaniesigrid/)
 
 ## 🤝 Contributing
 
@@ -47,7 +48,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to all of my code reviewers and partners at Microverse!
+- Hat tip to @arcanemutterings for his random math quote API!
 
 ## 📝 License
 

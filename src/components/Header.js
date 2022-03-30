@@ -24,7 +24,7 @@ const Header = () => {
     container: (isNotMobile) => ({
       left: 0,
       textTransform: 'lowercase',
-      fontSize: isNotMobile ? '3rem' : '1.5rem',
+      fontSize: isNotMobile ? '3rem' : '1.8rem',
     }),
   };
 
@@ -82,7 +82,7 @@ const Header = () => {
           : (
             <nav style={navStyle}>
               <h1 style={titleStyle.container(isNotMobile)} className="Title">
-                <NavLink to="/" rel="noopener noreferrer">Math-Magicians</NavLink>
+                <NavLink to="/math-magicians/" rel="noopener noreferrer">Math-Magicians</NavLink>
               </h1>
               <div className="MenuContainer">
                 {isNotMobile

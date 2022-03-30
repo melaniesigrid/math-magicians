@@ -63,7 +63,7 @@ const Header = () => {
   };
 
   const handleToggle = () => {
-    setModalOpen((prev) => !prev)
+    setModalOpen((prev) => !prev);
   };
 
   return (
@@ -80,27 +80,27 @@ const Header = () => {
             </div>
           )
           : (
-              <nav style={navStyle}>
-                <h1 style={titleStyle.container(isNotMobile)} className="Title">
-                  <NavLink to="/" rel="noopener noreferrer">Math-Magicians</NavLink>
-                </h1>
-                <div className="MenuContainer">
-                  {isNotMobile
-                    ? (
-                      <ul style={listStyle.container(isNotMobile)}>
-                        <li style={itemStyle}><NavLink to="/Home/" rel="noopener noreferrer">Home</NavLink></li>
-                        <li style={itemStyle}><NavLink to="/math-magicians/" rel="noopener noreferrer">Calculator</NavLink></li>
-                        <li style={itemStyle}><NavLink to="/Quote/" rel="noopener noreferrer">Quote</NavLink></li>
-                      </ul>
-                    )
-                    : (
-                        <button style={menuButton} onClick={handleToggle} type="button" className="MenuButton">
-                          ≡
-                        </button>
-                    )}
+            <nav style={navStyle}>
+              <h1 style={titleStyle.container(isNotMobile)} className="Title">
+                <NavLink to="/" rel="noopener noreferrer">Math-Magicians</NavLink>
+              </h1>
+              <div className="MenuContainer">
+                {isNotMobile
+                  ? (
+                    <ul style={listStyle.container(isNotMobile)}>
+                      <li style={itemStyle}><NavLink to="/Home/" rel="noopener noreferrer">Home</NavLink></li>
+                      <li style={itemStyle}><NavLink to="/math-magicians/" rel="noopener noreferrer">Calculator</NavLink></li>
+                      <li style={itemStyle}><NavLink to="/Quote/" rel="noopener noreferrer">Quote</NavLink></li>
+                    </ul>
+                  )
+                  : (
+                    <button style={menuButton} onClick={handleToggle} type="button" className="MenuButton">
+                      ≡
+                    </button>
+                  )}
                 </div>
               </nav>
-        )}
+          )}
       </div>
     </header>
   );

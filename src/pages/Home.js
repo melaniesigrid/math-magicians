@@ -1,6 +1,10 @@
 import React from 'react';
 
 const Home = () => {
+  const containerStyle = {
+    padding: '1.5rem',
+  };
+
   const titleStyle = {
     color: 'white',
     fontSize: '2.3rem',
@@ -12,7 +16,7 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <div style={containerStyle}>
       <h2 style={titleStyle}>Welcome to Math-Magicians!</h2>
       <span style={paragraphStyle}>
         &quot;Math magicians&quot; is a website for all fans of mathematics.

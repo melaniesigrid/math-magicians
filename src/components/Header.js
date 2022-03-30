@@ -21,20 +21,20 @@ const Header = () => {
   };
 
   const titleStyle = {
-    container: isNotMobile => ({
+    container: (isNotMobile) => ({
       left: 0,
       textTransform: 'lowercase',
       fontSize: isNotMobile ? '3rem' : '1.5rem',
-    })
+    }),
   };
 
   const listStyle = {
-    container: isNotMobile => ({
+    container: (isNotMobile) => ({
       listStyleType: 'none',
       display: 'flex',
       flexDirection: isNotMobile ? 'row' : 'column',
       fontSize: isNotMobile ? '1.3rem' : '1.5rem',
-    })
+    }),
   };
 
   const itemStyle = {
@@ -45,7 +45,7 @@ const Header = () => {
 
   const menuButton = {
     fontSize: '2rem',
-  }
+  };
 
   const overlayStyle = {
     position: 'fixed',
@@ -63,8 +63,8 @@ const Header = () => {
   };
 
   const handleToggle = () => {
-    setModalOpen(prev => !prev)
-  }
+    setModalOpen((prev) => !prev)
+  };
 
   return (
     <header style={headerStyle}>
@@ -74,35 +74,33 @@ const Header = () => {
             <div style={overlayStyle}>
               <ul style={listStyle.container(isNotMobile)}>
                 <li style={itemStyle}><NavLink to="/Home/" rel="noopener noreferrer" onClick={handleToggle}>Home</NavLink></li>
-                <li style={itemStyle}><NavLink to="/" rel="noopener noreferrer" onClick={handleToggle}>Calculator</NavLink></li>
+                <li style={itemStyle}><NavLink to="/math-magicians/" rel="noopener noreferrer" onClick={handleToggle}>Calculator</NavLink></li>
                 <li style={itemStyle}><NavLink to="/Quote/" rel="noopener noreferrer" onClick={handleToggle}>Quote</NavLink></li>
               </ul>
             </div>
           )
-            : (
+          : (
               <nav style={navStyle}>
-                <h1 style={titleStyle.container(isNotMobile)} className='Title'>
+                <h1 style={titleStyle.container(isNotMobile)} className="Title">
                   <NavLink to="/" rel="noopener noreferrer">Math-Magicians</NavLink>
                 </h1>
                 <div className="MenuContainer">
                   {isNotMobile
                     ? (
-                        <ul style={listStyle.container(isNotMobile)}>
-                          <li style={itemStyle}><NavLink to="/Home/" rel="noopener noreferrer">Home</NavLink></li>
-                          <li style={itemStyle}><NavLink to="/" rel="noopener noreferrer">Calculator</NavLink></li>
-                          <li style={itemStyle}><NavLink to="/Quote/" rel="noopener noreferrer">Quote</NavLink></li>
-                        </ul>
+                      <ul style={listStyle.container(isNotMobile)}>
+                        <li style={itemStyle}><NavLink to="/Home/" rel="noopener noreferrer">Home</NavLink></li>
+                        <li style={itemStyle}><NavLink to="/math-magicians/" rel="noopener noreferrer">Calculator</NavLink></li>
+                        <li style={itemStyle}><NavLink to="/Quote/" rel="noopener noreferrer">Quote</NavLink></li>
+                      </ul>
                     )
-                      : (
-                        <button style={menuButton} onClick={handleToggle} className="MenuButton">
+                    : (
+                        <button style={menuButton} onClick={handleToggle} type="button" className="MenuButton">
                           ≡
                         </button>
-                      )
-                  }
+                    )}
                 </div>
               </nav>
-            )
-        }
+        )}
       </div>
     </header>
   );

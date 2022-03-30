@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <div>
       <h2 style={titleStyle}>Welcome to Math-Magicians!</h2>
-      <p style={paragraphStyle}>
+      <span style={paragraphStyle}>
         &quot;Math magicians&quot; is a website for all fans of mathematics.
         <span> </span>
         It is a Single Page App (SPA) that allows users to:
@@ -28,7 +28,7 @@ const Home = () => {
           GitHub
         </a>
         .
-      </p>
+      </span>
     </div>
   );
 };
